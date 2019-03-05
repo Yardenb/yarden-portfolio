@@ -4,7 +4,7 @@
   "description": "Portfolio of Yarden Buzaglo",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w",
+    "watch:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w"
   },
   "author": "Yarden Buzaglo",
   "license": "ISC",
