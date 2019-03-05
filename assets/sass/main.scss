@@ -1,0 +1,22 @@
+// ABSTRACT
+@import './abstract/vars.scss';
+@import './abstract/mixin.scss';
+
+//BASE
+@import './base/base.scss';
+@import './base/typography.scss';
+@import './base/utils.scss'; 
+
+// LAYOUT
+@import './layout/header.scss';
+@import './layout/nav.scss';
+@import './layout/footer.scss';
+
+//CMPS
+@import './cmps/button.scss';
+@import './cmps/introduction.scss';
+@import './cmps/skills.scss';
+@import './cmps/card.scss';
+
+// PAGES
+@import './pages/home.scss';

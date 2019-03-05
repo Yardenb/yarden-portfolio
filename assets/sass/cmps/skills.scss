@@ -1,0 +1,14 @@
+.skills{
+    text-align: center;
+    font-size: 2rem;
+    color: $color-secondary;
+    @include respond(tab-land){
+        width: 60%;
+      }
+    &__container{
+        height: 30rem;
+        margin-top: 2rem;
+        border: 0.1rem solid $color-grey;
+    }
+    
+}

@@ -1,0 +1,34 @@
+@import '../abstract/vars.scss';
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.heading-primary{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    &--main{
+        font-size: 4.5rem;
+        color: $color-main;
+        font-weight: 900;
+        // margin-bottom: 1.3rem;
+    }
+    &--sub{
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        color:$color-grey;
+        margin: 1.3rem 0 2rem 0; 
+    }
+}
+.heading-secondary{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3rem auto 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+    border-bottom: 0.2rem solid $color-main;
+    width: fit-content;
+    border-radius: 0.3rem;
+    letter-spacing: 0.1rem;
+}

@@ -1,0 +1,29 @@
+.section{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    &--about{
+        display: flex;
+        flex-direction: column;
+        @include respond(tab-land){
+            margin-top: 5rem;
+            max-width: 75%;
+        }
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        font-size: $default-font-size;
+        @include respond(tab-land){
+          flex-direction: row;
+          justify-content: space-between;
+           margin-top: 8rem;
+
+        }
+    }
+    &--contact{
+        max-width: 100%;
+        margin:0;
+    } 
+   
+}

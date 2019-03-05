@@ -1,0 +1,29 @@
+.header{
+    background-image: url('../img/header.jpeg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__text-box{   
+        background-color: rgba($color-black, 0.8);
+        color: $color-white;
+        text-align: center;
+        width: 100%;
+        padding: 3rem 0;
+        letter-spacing: 0.1rem;
+        animation: heading-primary 0.8s;
+    }
+}
+
+@keyframes heading-primary{
+    0%{
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

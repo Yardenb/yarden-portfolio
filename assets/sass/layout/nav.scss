@@ -1,0 +1,28 @@
+.nav{
+    background-color: $color-grey-dark-3;
+    font-size: 1.6rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    &__list{
+        list-style: none;
+        display: flex;
+        padding: 0 2rem;
+        border-bottom: 0.3rem solid $color-main;
+    }
+    &__item{
+        padding: 1rem 2rem;
+    }
+    &__item > a{
+        color: $color-white;
+        text-decoration: none;
+        transition: 0.2s;
+        text-transform: uppercase;
+    }
+    &__item > a:hover, &__item > a:active{
+        color: $color-main;
+    }
+    &__item > .active-link{
+        color: $color-main;
+    }
+}

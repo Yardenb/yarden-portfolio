@@ -1,0 +1,11 @@
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    margin-top: 8rem;
+    @include respond(desktop){
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+      justify-content: center;
+      
+    }
+}

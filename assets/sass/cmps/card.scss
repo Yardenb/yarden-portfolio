@@ -1,0 +1,61 @@
+.card{
+    position: relative;
+    transition: 0.3s;
+    font-size: 2rem;
+    &__img{
+        width: 100%;
+        transition: 0.3s;
+    }
+    &__title{
+        width: 60%;
+        opacity: 0;
+        transition: 0.8s;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+    a{
+        display: block;
+        position: absolute;
+        opacity: 0;
+        transition: 0.8s;
+        position: absolute;
+        bottom: 38%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        @include respond(tab-port){
+            bottom: 20%;
+        }
+    }
+  
+    &:hover{
+        border: 0.2rem solid pink;
+        border-radius: 0.6rem;
+    }
+    &:hover  > &__img, &:active > &__img{
+        opacity: 0; 
+    }
+    &:hover > &__title, &:active  > &__title{
+        opacity: 1;
+        animation: title 0.8s both;
+    }
+    &:hover > a, &:active  > a{
+        opacity: 1;
+        animation: button 0.8s;
+    }
+}
+@keyframes title{
+    0%{}
+    100%{
+        top: 20%;
+    }
+}
+@keyframes button{
+    0%{bottom: 0}
+    100%{
+       
+    }
+}

@@ -1,0 +1,24 @@
+// @mixin clearFix{
+//     &:after{
+//         content:"";
+//         display:table;
+//         clear:both;
+//     }
+// }
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @mixin respond($breakpoint) {
+    @if $breakpoint == tab-port {//600-900
+        @media(min-width: 37.5em){@content};
+    } 
+    @if $breakpoint == tab-land {//900-1200
+        @media(min-width: 56.25em){@content};
+    } 
+    @if $breakpoint == desktop {//1200+
+        @media(min-width: 75em){@content};
+    } 
+}
