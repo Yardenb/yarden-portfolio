@@ -4,7 +4,7 @@
         width: 100%;
     }
     &:hover &__img , &:active &__img{
-        filter: opacity(30%);
+        filter: opacity(60%);
     }
     &:hover > div {
         opacity: 1;
@@ -21,7 +21,10 @@
         transform: translateX(-50%);
         font-size: 1.9rem;
         font-weight: 700;
-        // color: $color-main;
+        background-color: $color-white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 0.1rem solid $color-main;
     }
     &__img:hover  &__title, &__img:active  > &__title{
         opacity: 1;
