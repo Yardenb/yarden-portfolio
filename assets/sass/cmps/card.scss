@@ -1,10 +1,14 @@
 .card{
     position: relative;
-    transition: 0.3s;
-    font-size: 2rem;
     &__img{
         width: 100%;
-        transition: 0.3s;
+    }
+    &:hover &__img , &:active &__img{
+        filter: opacity(30%);
+    }
+    &:hover > div {
+        opacity: 1;
+        animation: title 0.8s both;
     }
     &__title{
         width: 60%;
@@ -15,37 +19,16 @@
         left: 50%;
         text-align: center;
         transform: translateX(-50%);
+        font-size: 1.9rem;
+        font-weight: 700;
+        // color: $color-main;
     }
-    a{
-        display: block;
-        position: absolute;
-        opacity: 0;
-        transition: 0.8s;
-        position: absolute;
-        bottom: 38%;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-        @include respond(tab-port){
-            bottom: 20%;
-        }
-    }
-  
-    &:hover{
-        border: 0.2rem solid pink;
-        border-radius: 0.6rem;
-    }
-    &:hover  > &__img, &:active > &__img{
-        opacity: 0; 
-    }
-    &:hover > &__title, &:active  > &__title{
+    &__img:hover  &__title, &__img:active  > &__title{
         opacity: 1;
+        font-size: 1.9rem;
         animation: title 0.8s both;
     }
-    &:hover > a, &:active  > a{
-        opacity: 1;
-        animation: button 0.8s;
-    }
+
 }
 @keyframes title{
     0%{}

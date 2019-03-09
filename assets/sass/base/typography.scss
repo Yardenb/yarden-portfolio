@@ -9,14 +9,13 @@ body{
     margin-bottom: 1rem;
     &--main{
         font-size: 4.5rem;
-        color: $color-main;
+        color: $color-black;
         font-weight: 900;
-        // margin-bottom: 1.3rem;
     }
     &--sub{
         font-size: 3rem;
         letter-spacing: 0.2rem;
-        color:$color-grey;
+        color:$color-black;
         margin: 1.3rem 0 2rem 0; 
     }
 }

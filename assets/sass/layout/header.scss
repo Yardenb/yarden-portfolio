@@ -1,17 +1,21 @@
 .header{
-    background-image: url('../img/header.jpeg');
+    background-image: url('../img/header4.jpg');
     height: 100vh;
-    background-position: center;
     background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: soft-light;
     &__text-box{   
-        background-color: rgba($color-black, 0.8);
-        color: $color-white;
+        background-color: rgba($color-white, 0.5);
+        color: $color-black;
         text-align: center;
-        width: 100%;
-        padding: 3rem 0;
+        width:fit-content;
+        border-radius: 0.5rem;
+        padding: 3rem ;
         letter-spacing: 0.1rem;
         animation: heading-primary 0.8s;
     }

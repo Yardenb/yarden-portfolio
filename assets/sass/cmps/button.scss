@@ -3,29 +3,19 @@
     font-size: $default-font-size; 
 
     &--1{
-        padding: 1.2rem 3.8rem 1.2rem 2rem;
-        color: $color-white;
-        border: 0.1rem solid $color-white;
+        // padding: 1.2rem 3.8rem 1.2rem 2rem;
+        padding: 1.2rem 2rem;
+        color: $color-black;
+        border: 0.1rem solid $color-black;
         transition: 0.4s;
         border-radius: 0.1rem;
-        &:after{
-            content: "→";
-            display: inline-block;
-            position: absolute;
-            margin-left: 0.8rem;
-            color: $color-white;
-            transition: 0.4s;
-            backface-visibility: hidden;
+        font-weight: 700;
+        &:hover{
+            color:$color-black;
+            border:  none;
+            background-color: $color-white;
         }
-        &:hover, &:active{
-            color: $color-main;
-            border-color: $color-main;
-            background-color: rgba($color-white, 0.2);
-            &:after{
-                transform: rotate(90deg);
-                color: $color-main;
-            }
-        }
+ 
     }
     &--2{
         padding: 1.2rem 2rem;

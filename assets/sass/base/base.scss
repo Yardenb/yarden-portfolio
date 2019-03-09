@@ -4,6 +4,7 @@
     box-sizing: inherit;
 }
 html{
+    scroll-behavior: smooth;
     font-size: 50%;
     @include respond(tab-port){
         font-size: 56.25%;
