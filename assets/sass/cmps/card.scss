@@ -25,6 +25,7 @@
         padding: 1rem;
         border-radius: 0.5rem;
         border: 0.1rem solid $color-main;
+        cursor: pointer;
     }
     &__img:hover  &__title, &__img:active  > &__title{
         opacity: 1;

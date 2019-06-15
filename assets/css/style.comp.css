@@ -254,7 +254,8 @@ body {
     background-color: #fff;
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 0.1rem solid #00A1A7; }
+    border: 0.1rem solid #00A1A7;
+    cursor: pointer; }
   .card__img:hover .card__title, .card__img:active > .card__title {
     opacity: 1;
     font-size: 1.9rem;
